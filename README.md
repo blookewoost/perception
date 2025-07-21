@@ -1,4 +1,4 @@
-# Embedded Object Detection Project Notes
+# Embedded Object Detection Pipedream
 
 ## 🎯 Goal
 Deploy an object detection model (starting with people detection) on an edge device with a dedicated NPU, using a fully open Linux software stack where possible.
@@ -63,18 +63,15 @@ Deploy an object detection model (starting with people detection) on an edge dev
 
 - **Camera Input**
   - Plan: Use an RTSP-compatible Ethernet IP camera
-  - Familiarity with compressed video streams (e.g., H.264)
-  - VPU acceleration would be helpful but isn’t mandatory
+  - Compressed video streams (H.264, H.265)
 
 - **Lidar Integration** *(Future Consideration)*
-  - No current experience — would require research into:
-    - Common Lidar interfaces (USB, UART, Ethernet)
-    - Data format compatibility (e.g. Point Cloud, ROS drivers)
+  - Common Lidar interfaces (USB, UART, Ethernet)
+  - Data format compatibility (e.g. Point Cloud, ROS drivers)
 
 ---
 
 ## 📚 Topics to Research
 - Interfacing with VPU (even if using proprietary APIs)
 - OpenVINO / ONNX Runtime acceleration on RK3588
-- RTSP video decoding without hardware acceleration
 - Basic LiDAR sensor specs, ROS drivers, and visualization tools
